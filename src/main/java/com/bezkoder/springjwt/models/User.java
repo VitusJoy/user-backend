@@ -19,8 +19,8 @@ public class User {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @NotBlank
-  @Size(max = 20)
+//  @NotBlank
+//  @Size(max = 20)
   private String username;
 
   @NotBlank
@@ -41,7 +41,7 @@ public class User {
   public User() {
   }
 
-  public User(String username, String email, String password) {
+  public User(String email, String password) {
     this.username = username;
     this.email = email;
     this.password = password;
